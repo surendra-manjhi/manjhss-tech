@@ -1,9 +1,9 @@
-import React, { Children } from "react";
+import React from "react";
 
-function Medium({ children }) {
+function Hightlight({ children }) {
 	return (
 		<span className="text-black text-[32px] font-medium">{children}</span>
 	);
 }
 
-export default Medium;
+export default Hightlight;
