@@ -1,8 +1,17 @@
+import React from "react";
+import Stacks from "./components/Stacks";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
+import About from "./components/About";
+
 function App() {
 	return (
-		<>
-			<h1 className="text-3xl text-center font-medium">Surendra</h1>
-		</>
+		<main className="w-[80%] mx-auto">
+			<About />
+			<Stacks />
+			<Works />
+			<Contact />
+		</main>
 	);
 }
 
