@@ -11,7 +11,7 @@ function Works() {
 				Works
 			</div>
 
-			<Filter />
+			{/* <Filter /> */}
 		</section>
 	);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Hightlight from "./Medium";
+import Highlight from "./Highlight";
 
 function About() {
 	return (
@@ -7,32 +7,44 @@ function About() {
 			id="about"
 			class="bg-white my-8 rounded-[20px] border-[3px] border-neutral-200 relative"
 		>
-			<div id="cover" className="">
+			<div id="profile-img-view" className="relative">
 				<img
 					src="https://user-images.githubusercontent.com/63772910/179602695-9c533f5f-cd66-48cb-bc88-381bf8b84e82.png"
-					alt=""
-					className="w-full object-cover"
+					alt="profile-cover-img"
+					className="w-full rounded-t-[20px]"
+				/>
+
+				<img
+					src="https://pbs.twimg.com/profile_images/1707029425551036416/UBrgU5Zt_400x400.jpg"
+					alt="profile-user-pic"
+					className="w-[120px] aspect-auto rounded-[20px] border-[6px] border-white absolute left-14 bottom-[-60px]"
 				/>
 			</div>
 
-			<div id="content" className="p-6">
-				<div id="headline" className="text-black text-5xl font-bold">
+			<div id="profile-content" className="mt-16 p-6">
+				<div
+					id="profile-content-headline"
+					className="text-black text-5xl font-bold"
+				>
 					MERN Stack Developer 🍉
 				</div>
 
 				<p
-					id="about"
+					id="profile-content-description"
 					className="my-4 text-black text-[32px] font-light break-words"
 				>
-					Hello, I’m <Hightlight>Surendra</Hightlight>. I’m a{" "}
-					<Hightlight>full-stack developer</Hightlight> with{" "}
-					<Hightlight>1 year</Hightlight> of experience. I enjoy
+					Hello, I’m <Highlight>Surendra</Highlight>. I’m a{" "}
+					<Highlight>full-stack developer</Highlight> with{" "}
+					<Highlight>1 year</Highlight> of experience. I enjoy
 					building websites and digital products, based in BHARAT. My
-					focus is <Hightlight>React (Next.js)</Hightlight>.
+					focus is <Highlight>React (Next.js)</Highlight>.
 				</p>
 
-				<div id="redirects" className="mt-8 flex gap-3 items-center">
-					<a id="resume" href="">
+				<div
+					id="profile-content-redirects"
+					className="mt-8 flex gap-3 items-center"
+				>
+					<a id="profile-content-redirects-resume" href="/resume">
 						<div className="px-10 py-3 bg-black rounded-[50px] border-black text-center text-white text-[32px] font-normal">
 							<div className="flex gap-3 items-center justify-center">
 								<span className="">Resume</span>

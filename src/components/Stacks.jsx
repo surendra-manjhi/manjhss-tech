@@ -11,7 +11,7 @@ function Stacks() {
 				Stacks
 			</div>
 
-			<Filter />
+			{/* <Filter /> */}
 		</section>
 	);
 }

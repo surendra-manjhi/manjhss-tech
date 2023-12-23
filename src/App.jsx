@@ -6,7 +6,7 @@ import About from "./components/About";
 
 function App() {
 	return (
-		<main className="w-[80%] mx-auto">
+		<main className="w-[80%] max-w-[1160px] mx-auto">
 			<About />
 			<Stacks />
 			<Works />
