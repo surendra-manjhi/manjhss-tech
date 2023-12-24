@@ -56,3 +56,30 @@ export const stackIcons = [
 	figma,
 	express,
 ];
+
+export const projects = [
+	{
+		codeUrl: "https://github.com/surendra-manjhi/StickyNotes",
+		previewUrl: "https://surendra-manjhi.github.io/StickyNotes/",
+		imgUrl: "https://cdn.idntimes.com/content-images/community/2022/05/pexels-bruno-bueno-3854816-bbcda7aae3e62e5078fb8a9bde5c5e28-fae4425fb91eb861760dda8f198311c7_600x400.jpg",
+		title: "Sticky Notes",
+		desc: "",
+		tags: ["html", "css", "javascript", "APIs"],
+	},
+	{
+		codeUrl: "https://github.com/surendra-manjhi/CountDown-Timer",
+		previewUrl: "https://surendra-manjhi.github.io/CountDown-Timer/",
+		imgUrl: "https://website-assets.commoninja.com/distribution/1686558596514_image5-3.png",
+		title: "Countdown Timer",
+		desc: "",
+		tags: ["html", "css", "javascript"],
+	},
+	{
+		codeUrl: "https://github.com/surendra-manjhi/Dogpedia",
+		previewUrl: "",
+		imgUrl: "https://savoryprimepet.com/wp-content/uploads/2018/03/A-happy-dog-on-a-computer.jpg",
+		title: "Dogpedia",
+		desc: "",
+		tags: ["react", "APIs"],
+	},
+];

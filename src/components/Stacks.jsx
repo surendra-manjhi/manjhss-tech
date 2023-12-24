@@ -9,9 +9,9 @@ function Stacks() {
 			id="stacks"
 			class="bg-white my-8 p-8 rounded-[20px] border-[3px] border-neutral-200"
 		>
-			<div id="heading" class="text-black text-5xl font-medium">
+			<h2 id="heading" class="text-black text-5xl font-medium">
 				Stacks
-			</div>
+			</h2>
 
 			<Filter data={stackFilters} />
 

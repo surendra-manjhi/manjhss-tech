@@ -7,20 +7,24 @@ function About() {
 	return (
 		<section
 			id="about"
-			class="bg-white my-8 rounded-[20px] border-[3px] border-neutral-200 relative"
+			class="bg-white my-8 rounded-[20px] border-[3px] border-neutral-200 overflow-hidden relative"
 		>
 			<div id="profile-img-view" className="relative">
-				<img
-					src="https://user-images.githubusercontent.com/63772910/179602695-9c533f5f-cd66-48cb-bc88-381bf8b84e82.png"
-					alt="profile-cover-img"
-					className="w-full rounded-t-[20px]"
-				/>
+				<div>
+					<img
+						src="https://user-images.githubusercontent.com/63772910/179602695-9c533f5f-cd66-48cb-bc88-381bf8b84e82.png"
+						alt="profile-cover-img"
+						className="w-full"
+					/>
+				</div>
 
-				<img
-					src="https://pbs.twimg.com/profile_images/1707029425551036416/UBrgU5Zt_400x400.jpg"
-					alt="profile-user-pic"
-					className="w-[120px] aspect-auto rounded-[20px] border-[6px] border-white absolute left-14 bottom-[-60px]"
-				/>
+				<div className="w-[120px] aspect-auto rounded-[20px] border-[6px] border-white absolute left-14 bottom-[-60px] overflow-hidden">
+					<img
+						src="https://pbs.twimg.com/profile_images/1707029425551036416/UBrgU5Zt_400x400.jpg"
+						alt="profile-user-pic"
+						className="w-full"
+					/>
+				</div>
 			</div>
 
 			<div id="profile-content" className="mt-14 p-8">

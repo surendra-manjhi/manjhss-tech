@@ -8,12 +8,12 @@ function Contact() {
 			id="contact"
 			class="bg-white my-8 p-8 rounded-[20px] border-[3px] border-neutral-200"
 		>
-			<div id="heading" class="text-black text-5xl font-medium">
+			<h2 id="heading" class="text-black text-5xl font-medium">
 				Let’s work
-			</div>
+			</h2>
 
-			<div className="mt-8 flex justify-between flex-wrap">
-				<div className="w-[60%] flex items-center border-[3px] border-neutral-200 rounded-full overflow-hidden">
+			<div className="mt-4 flex justify-between flex-wrap">
+				<div className="w-[60%] flex items-center border-2 border-neutral-200 rounded-full overflow-hidden">
 					<input
 						className="w-full pl-6 py-2 text-[32px] font-thin focus:outline-none"
 						type="email"
