@@ -1,6 +1,8 @@
 import React from "react";
 import Filter from "./Filter";
 
+import {workFilters} from "../data/data"
+
 function Works() {
 	return (
 		<section
@@ -11,7 +13,7 @@ function Works() {
 				Works
 			</div>
 
-			{/* <Filter /> */}
+			<Filter data={workFilters} />
 		</section>
 	);
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import Filter from "./Filter";
 
+import { stackFilters } from "../data/data";
+
 function Stacks() {
 	return (
 		<section
@@ -11,7 +13,7 @@ function Stacks() {
 				Stacks
 			</div>
 
-			{/* <Filter /> */}
+			<Filter data={stackFilters} />
 		</section>
 	);
 }

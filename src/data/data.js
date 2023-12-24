@@ -16,3 +16,15 @@ export const redirects = [
 		src: twitter,
 	},
 ];
+
+export const stackFilters = ["All", "Frontend", "Backend", "Database", "Tools"];
+
+export const workFilters = [
+	"All",
+	"SaaS",
+	"APIs",
+	"MERN",
+	"Portfolio",
+	"App",
+	"Tools",
+];
