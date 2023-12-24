@@ -21,7 +21,7 @@ function About() {
 				<img
 					src="https://pbs.twimg.com/profile_images/1707029425551036416/UBrgU5Zt_400x400.jpg"
 					alt="profile-user-pic"
-					className="w-[120px] aspect-auto rounded-[20px] border-[6px] border-white absolute left-14 bottom-[-60px]"
+					className="w-[120px] aspect-auto rounded-[20px] border-[8px] border-white absolute left-14 bottom-[-60px]"
 				/>
 			</div>
 
