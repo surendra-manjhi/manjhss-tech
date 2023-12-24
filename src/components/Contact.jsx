@@ -6,9 +6,9 @@ function Contact() {
 	return (
 		<section
 			id="contact"
-			class="bg-white my-8 p-8 rounded-[20px] border-[3px] border-neutral-200"
+			className="bg-white my-8 p-8 rounded-[20px] border-[3px] border-neutral-200"
 		>
-			<h2 id="heading" class="text-black text-5xl font-medium">
+			<h2 id="heading" className="text-black text-5xl font-medium">
 				Let’s work
 			</h2>
 
@@ -19,7 +19,7 @@ function Contact() {
 						type="email"
 						placeholder="example@gmail.com"
 					/>
-					<span class="material-symbols-rounded text-4xl pr-6 cursor-pointer">
+					<span className="material-symbols-rounded text-4xl pr-6 cursor-pointer">
 						forward_to_inbox
 					</span>
 				</div>

@@ -7,12 +7,12 @@ function Card({ codeUrl, previewUrl, imgUrl, title, desc, tags }) {
 			<div className="border-2 border-neutral-200 rounded-[20px] overflow-hidden relative">
 				<div className="absolute top-4 right-4">
 					<a href={codeUrl} target="_blank">
-						<span class="material-symbols-rounded text-4xl cursor-pointer">
+						<span className="material-symbols-rounded text-4xl cursor-pointer">
 							data_object
 						</span>
 					</a>
 					<a href={previewUrl} target="_blank">
-						<span class="material-symbols-rounded text-4xl cursor-pointer">
+						<span className="material-symbols-rounded text-4xl cursor-pointer">
 							north_east
 						</span>
 					</a>
@@ -26,7 +26,7 @@ function Card({ codeUrl, previewUrl, imgUrl, title, desc, tags }) {
 						{title}
 					</div>
 					<div>
-						<span class="material-symbols-rounded text-4xl cursor-pointer">
+						<span className="material-symbols-rounded text-4xl cursor-pointer">
 							expand_more
 						</span>
 					</div>

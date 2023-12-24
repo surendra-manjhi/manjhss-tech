@@ -7,7 +7,7 @@ function About() {
 	return (
 		<section
 			id="about"
-			class="bg-white my-8 rounded-[20px] border-[3px] border-neutral-200 overflow-hidden relative"
+			className="bg-white my-8 rounded-[20px] border-[3px] border-neutral-200 overflow-hidden relative"
 		>
 			<div id="profile-img-view" className="relative">
 				<div>
@@ -50,9 +50,9 @@ function About() {
 					id="profile-content-redirects"
 					className="mt-8 flex gap-4 items-center flex-wrap"
 				>
-					<button class="bg-black text-white text-[32px] font-normal py-2 px-10 rounded-full flex gap-2 items-center">
+					<button className="bg-black text-white text-[32px] font-normal py-2 px-10 rounded-full flex gap-2 items-center">
 						<span>Resume</span>
-						<span class="material-symbols-rounded text-4xl">
+						<span className="material-symbols-rounded text-4xl">
 							download
 						</span>
 					</button>
