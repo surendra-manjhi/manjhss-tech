@@ -6,7 +6,7 @@ function Tags({ data }) {
 			{data?.map((item, index) => (
 				<div
 					key={index}
-					className="px-4 py-1 bg-black rounded-full border-black text-white text-2xl font-light"
+					className="px-4 py-1 bg-black rounded-full border-black text-white text-2xl font-normal"
 				>
 					{item}
 				</div>
