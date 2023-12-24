@@ -19,8 +19,8 @@ function Contact() {
 						type="email"
 						placeholder="example@gmail.com"
 					/>
-					<span class="material-symbols-rounded text-5xl pr-2 cursor-pointer">
-						send
+					<span class="material-symbols-rounded text-4xl pr-6 cursor-pointer">
+						forward_to_inbox
 					</span>
 				</div>
 
