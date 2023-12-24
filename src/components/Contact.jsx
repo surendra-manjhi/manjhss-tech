@@ -16,7 +16,7 @@ function Contact() {
 				<div className="w-[60%] flex items-center border-[3px] border-neutral-200 rounded-full overflow-hidden">
 					<input
 						className="w-full pl-6 py-2 text-[32px] font-thin focus:outline-none"
-						type="text"
+						type="email"
 						placeholder="example@gmail.com"
 					/>
 					<span class="material-symbols-rounded text-5xl pr-2 cursor-pointer">
