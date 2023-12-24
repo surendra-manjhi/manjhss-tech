@@ -44,7 +44,7 @@ function About() {
 
 				<div
 					id="profile-content-redirects"
-					className="mt-8 flex gap-4 items-center"
+					className="mt-8 flex gap-4 items-center flex-wrap"
 				>
 					<button class="bg-black text-white text-[32px] font-normal py-2 px-10 rounded-full flex gap-2 items-center">
 						<span>Resume</span>
