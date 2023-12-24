@@ -1,7 +1,7 @@
 import React from "react";
 import Filter from "./Filter";
 
-import { stackFilters } from "../data/data";
+import { stackFilters, stackIcons } from "../data/data";
 
 function Stacks() {
 	return (
@@ -14,6 +14,14 @@ function Stacks() {
 			</div>
 
 			<Filter data={stackFilters} />
+
+			<div className="mt-4 flex items-center gap-5 flex-wrap">
+				{stackIcons?.map((icon, index) => (
+					<div key={index} className="w-[80px]">
+						<img src={icon} alt={icon} />
+					</div>
+				))}
+			</div>
 		</section>
 	);
 }
