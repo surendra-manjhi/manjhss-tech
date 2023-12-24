@@ -1,9 +1,7 @@
 import React from "react";
 import Highlight from "./Highlight";
 
-import linkedin from "../assets/web-icon/linkedin-logo.png";
-import github from "../assets/web-icon/github-logo.png";
-import twitter from "../assets/web-icon/twitter-logo.png";
+import { redirects } from "../data/data";
 
 function About() {
 	return (
@@ -59,35 +57,15 @@ function About() {
 						</div>
 					</a>
 
-					<a
-						href="https://linkedin.com/in/surendra-manjhi"
-						target="_blank"
-					>
-						<img
-							src={linkedin}
-							alt="linkedin-icon"
-							className="w-[60px] aspect-auto"
-						/>
-					</a>
-
-					<a
-						href="https://github.com/surendra-manjhi"
-						target="_blank"
-					>
-						<img
-							src={github}
-							alt="github-icon"
-							className="w-[60px] aspect-auto"
-						/>
-					</a>
-
-					<a href="https://twitter.com/manjhss" target="_blank">
-						<img
-							src={twitter}
-							alt="twitter-icon"
-							className="w-[60px] aspect-auto"
-						/>
-					</a>
+					{redirects?.map((data, index) => (
+						<a key={index} href={data.href} target="_blank">
+							<img
+								src={data.src}
+								alt={data.src}
+								className="w-[60px] aspect-auto"
+							/>
+						</a>
+					))}
 				</div>
 			</div>
 		</section>
