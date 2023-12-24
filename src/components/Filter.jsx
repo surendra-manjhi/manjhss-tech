@@ -2,7 +2,7 @@ import React from "react";
 
 function Filter({ data }) {
 	return (
-		<div className="flex gap-2 py-4 flex-wrap">
+		<div className="flex gap-2 my-4 flex-wrap">
 			{data?.map((item, index) => (
 				<div
 					key={index}
