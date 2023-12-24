@@ -46,23 +46,19 @@ function About() {
 					id="profile-content-redirects"
 					className="mt-8 flex gap-4 items-center"
 				>
-					<a href="/" target="_blank">
-						<div className="px-10 py-3 bg-black rounded-[50px] border-black text-center text-white text-[32px] font-normal">
-							<div className="flex gap-2 items-center justify-center">
-								<span className="">Resume</span>
-								<span class="material-symbols-rounded text-4xl">
-									download
-								</span>
-							</div>
-						</div>
-					</a>
+					<button class="bg-black text-white text-[32px] font-normal py-2 px-10 rounded-full flex gap-2 items-center">
+						<span>Resume</span>
+						<span class="material-symbols-rounded text-4xl">
+							download
+						</span>
+					</button>
 
 					{redirects?.map((data, index) => (
 						<a key={index} href={data.href} target="_blank">
 							<img
 								src={data.src}
 								alt={data.src}
-								className="w-[60px] aspect-auto"
+								className="w-[52px] aspect-auto"
 							/>
 						</a>
 					))}
