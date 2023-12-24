@@ -23,7 +23,7 @@ function About() {
 				/>
 			</div>
 
-			<div id="profile-content" className="mt-16 p-6">
+			<div id="profile-content" className="mt-14 p-8">
 				<div
 					id="profile-content-headline"
 					className="text-black text-5xl font-bold"
