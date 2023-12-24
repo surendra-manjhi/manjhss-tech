@@ -1,6 +1,10 @@
 import React from "react";
 import Highlight from "./Highlight";
 
+import linkedin from "../assets/web-icon/linkedin-logo.png";
+import github from "../assets/web-icon/github-logo.png";
+import twitter from "../assets/web-icon/twitter-logo.png";
+
 function About() {
 	return (
 		<section
@@ -42,17 +46,47 @@ function About() {
 
 				<div
 					id="profile-content-redirects"
-					className="mt-8 flex gap-3 items-center"
+					className="mt-8 flex gap-4 items-center"
 				>
-					<a id="profile-content-redirects-resume" href="/resume">
+					<a href="/" target="_blank">
 						<div className="px-10 py-3 bg-black rounded-[50px] border-black text-center text-white text-[32px] font-normal">
-							<div className="flex gap-3 items-center justify-center">
+							<div className="flex gap-2 items-center justify-center">
 								<span className="">Resume</span>
 								<span class="material-symbols-rounded text-4xl">
 									download
 								</span>
 							</div>
 						</div>
+					</a>
+
+					<a
+						href="https://linkedin.com/in/surendra-manjhi"
+						target="_blank"
+					>
+						<img
+							src={linkedin}
+							alt="linkedin-icon"
+							className="w-[60px] aspect-auto"
+						/>
+					</a>
+
+					<a
+						href="https://github.com/surendra-manjhi"
+						target="_blank"
+					>
+						<img
+							src={github}
+							alt="github-icon"
+							className="w-[60px] aspect-auto"
+						/>
+					</a>
+
+					<a href="https://twitter.com/manjhss" target="_blank">
+						<img
+							src={twitter}
+							alt="twitter-icon"
+							className="w-[60px] aspect-auto"
+						/>
 					</a>
 				</div>
 			</div>
