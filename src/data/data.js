@@ -76,7 +76,7 @@ export const projects = [
 	},
 	{
 		codeUrl: "https://github.com/surendra-manjhi/Dogpedia",
-		previewUrl: "",
+		previewUrl: "https://dogpedia-bay.vercel.app/",
 		imgUrl: "https://savoryprimepet.com/wp-content/uploads/2018/03/A-happy-dog-on-a-computer.jpg",
 		title: "Dogpedia",
 		desc: "",
