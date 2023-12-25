@@ -4,7 +4,7 @@ import Tags from "./Tags";
 function Card({ codeUrl, previewUrl, imgUrl, title, desc, tags }) {
 	return (
 		<div className="project-wrapper">
-			<div className="border-2 border-neutral-200 dark:border-gray-700 rounded-[20px] overflow-hidden relative">
+			<div className="rounded-2xl overflow-hidden relative">
 				<img src={imgUrl} alt={imgUrl} className="w-full" />
 
 				<div className="absolute top-4 right-4 flex rounded-full overflow-hidden">
@@ -18,7 +18,7 @@ function Card({ codeUrl, previewUrl, imgUrl, title, desc, tags }) {
 
 					<a
 						className="material-symbols-rounded text-4xl cursor-pointer"
-						href={codeUrl}
+						href={previewUrl}
 						target="_blank"
 					>
 						north_east
@@ -37,11 +37,7 @@ function Card({ codeUrl, previewUrl, imgUrl, title, desc, tags }) {
 					</div>
 				</div>
 
-				{/* <p className="my-4 text-2xl font-light break-words">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Tempora dolor aut, officiis consectetur quisquam vel saepe.
-					Maxime unde ducimus nobis!
-				</p> */}
+				<p className="my-4 text-2xl font-light break-words">{desc}</p>
 
 				<div className="mt-4 flex gap-2 flex-wrap">
 					{tags?.map((tag, index) => (
