@@ -19,7 +19,7 @@ function About() {
 					<img
 						src="https://pbs.twimg.com/profile_images/1707029425551036416/UBrgU5Zt_400x400.jpg"
 						alt="profile-pic"
-						className="w-full"
+						className="w-full rounded-[20px]"
 					/>
 				</div>
 			</div>

@@ -12,7 +12,7 @@
 	}
 
 	.profile-pic-wrapper {
-		@apply w-[120px] rounded-[20px] absolute left-14 bottom-[-60px] overflow-hidden;
+		@apply w-[120px] border-4 border-white dark:border-zinc-900 absolute left-12 bottom-[-60px] rounded-[20px];
 	}
 
 	.resume {
