@@ -4,18 +4,13 @@ import { redirects } from "../data/data";
 
 function Contact() {
 	return (
-		<section
-			id="contact"
-			className="bg-white my-8 p-8 rounded-[20px] border-[3px] border-neutral-200"
-		>
-			<h2 id="heading" className="text-black text-5xl font-medium">
-				Let’s work
-			</h2>
+		<section className="default">
+			<h2 className="heading">Let’s work</h2>
 
 			<div className="mt-4 flex justify-between flex-wrap">
-				<div className="w-[60%] flex items-center border-2 border-neutral-200 rounded-full overflow-hidden">
+				<div className="input-wrapper">
 					<input
-						className="w-full pl-6 py-2 text-[32px] font-thin focus:outline-none"
+						className="w-full pl-6 py-2 text-[32px] font-thin focus:outline-none dark:bg-zinc-900"
 						type="email"
 						placeholder="example@gmail.com"
 					/>

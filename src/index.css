@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.about {
+		@apply my-8 bg-white dark:bg-zinc-900 border-[3px] border-neutral-200 dark:border-gray-700 rounded-[20px] overflow-hidden;
+	}
+
+	.default {
+		@apply my-8 p-8 bg-white dark:bg-zinc-900 border-[3px] border-neutral-200 dark:border-gray-700  rounded-[20px];
+	}
+
+	.profile-pic-wrapper {
+		@apply w-[120px] rounded-[20px] absolute left-14 bottom-[-60px] overflow-hidden;
+	}
+
+	.resume {
+		@apply bg-black dark:bg-white text-[32px] text-white dark:text-black font-normal py-2 px-10 rounded-full flex gap-2 items-center;
+	}
+
+	.more {
+		@apply w-[52px] h-[52px] flex justify-center items-center bg-black dark:bg-white text-4xl text-white dark:text-black rounded-full cursor-pointer;
+	}
+
+	.heading {
+		@apply text-5xl text-black dark:text-white font-medium;
+	}
+
+	.filter {
+		@apply px-4 py-1 bg-white dark:bg-zinc-900 text-2xl text-black dark:text-white border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black rounded-full font-normal;
+	}
+
+	.project-wrapper {
+		@apply p-4 border-2 hover:border-[3px] border-neutral-200 dark:border-gray-700 rounded-[20px];
+	}
+
+	.input-wrapper {
+		@apply w-[60%] text-black dark:text-white flex items-center border-2 border-neutral-200 dark:border-gray-700 rounded-full overflow-hidden;
+	}
+}

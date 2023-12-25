@@ -7,20 +7,16 @@ import Card from "./Card";
 
 function Works() {
 	return (
-		<section
-			id="works"
-			className="bg-white my-8 p-8 rounded-[20px] border-[3px] border-neutral-200"
-		>
-			<h2 id="heading" className="text-black text-5xl font-medium">
-				Works
-			</h2>
+		<section className="default">
+			<h2 className="heading">Works</h2>
 
-			<Filter data={workFilters} />
+			<div className=" my-4 flex gap-2 flex-wrap">
+				{workFilters.map((filter, index) => (
+					<Filter key={index} data={filter} />
+				))}
+			</div>
 
-			<div
-				id="projects"
-				className="grid grid-cols-2 gap-4 items-start mt-8"
-			>
+			<div className="grid grid-cols-2 gap-4 items-start mt-8">
 				{projects.map((el, index) => (
 					<Card
 						key={index}

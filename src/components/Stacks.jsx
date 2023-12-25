@@ -5,15 +5,14 @@ import { stackFilters, stackIcons } from "../data/data";
 
 function Stacks() {
 	return (
-		<section
-			id="stacks"
-			className="bg-white my-8 p-8 rounded-[20px] border-[3px] border-neutral-200"
-		>
-			<h2 id="heading" className="text-black text-5xl font-medium">
-				Stacks
-			</h2>
+		<section className="default">
+			<h2 className="heading">Stacks</h2>
 
-			<Filter data={stackFilters} />
+			<div className=" my-4 flex gap-2 flex-wrap">
+				{stackFilters.map((filter) => (
+					<Filter key={filter} data={filter} />
+				))}
+			</div>
 
 			<div className="mt-8 flex items-center gap-5 flex-wrap">
 				{stackIcons?.map((icon, index) => (

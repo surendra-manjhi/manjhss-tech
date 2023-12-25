@@ -5,40 +5,31 @@ import { redirects } from "../data/data";
 
 function About() {
 	return (
-		<section
-			id="about"
-			className="bg-white my-8 rounded-[20px] border-[3px] border-neutral-200 overflow-hidden relative"
-		>
-			<div id="profile-img-view" className="relative">
+		<section className="about">
+			<div className="relative">
 				<div>
 					<img
 						src="https://user-images.githubusercontent.com/63772910/179602695-9c533f5f-cd66-48cb-bc88-381bf8b84e82.png"
-						alt="profile-cover-img"
+						alt="cover-img"
 						className="w-full"
 					/>
 				</div>
 
-				<div className="w-[120px] aspect-auto rounded-[20px] border-[6px] border-white absolute left-14 bottom-[-60px] overflow-hidden">
+				<div className="profile-pic-wrapper">
 					<img
 						src="https://pbs.twimg.com/profile_images/1707029425551036416/UBrgU5Zt_400x400.jpg"
-						alt="profile-user-pic"
+						alt="profile-pic"
 						className="w-full"
 					/>
 				</div>
 			</div>
 
-			<div id="profile-content" className="mt-14 p-8">
-				<div
-					id="profile-content-headline"
-					className="text-black text-5xl font-bold"
-				>
+			<div className="mt-14 p-8">
+				<h1 className="text-5xl text-black dark:text-white font-bold">
 					MERN Stack Developer 🍉
-				</div>
+				</h1>
 
-				<p
-					id="profile-content-description"
-					className="my-4 text-black text-[32px] font-light break-words"
-				>
+				<p className="my-4 text-[32px] text-black dark:text-white font-light break-words">
 					Hello, I’m <Highlight>Surendra</Highlight>. I’m a{" "}
 					<Highlight>full-stack developer</Highlight> with{" "}
 					<Highlight>1 year</Highlight> of experience. I enjoy
@@ -46,12 +37,9 @@ function About() {
 					focus is <Highlight>React (Next.js)</Highlight>.
 				</p>
 
-				<div
-					id="profile-content-redirects"
-					className="mt-8 flex gap-4 items-center flex-wrap"
-				>
-					<button className="bg-black text-white text-[32px] font-normal py-2 px-10 rounded-full flex gap-2 items-center">
-						<span>Resume</span>
+				<div className="mt-8 flex gap-4 items-center flex-wrap">
+					<button className="resume">
+						Resume
 						<span className="material-symbols-rounded text-4xl">
 							download
 						</span>
@@ -66,6 +54,10 @@ function About() {
 							/>
 						</a>
 					))}
+
+					<span class="material-symbols-rounded more">
+						more_horiz
+					</span>
 				</div>
 			</div>
 		</section>

@@ -2,7 +2,9 @@ import React from "react";
 
 function Highlight({ children }) {
 	return (
-		<span className="text-black text-[32px] font-medium">{children}</span>
+		<span className="text-[32px] text-black dark:text-white font-medium">
+			{children}
+		</span>
 	);
 }
 

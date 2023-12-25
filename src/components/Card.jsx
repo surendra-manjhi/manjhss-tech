@@ -3,36 +3,51 @@ import Tags from "./Tags";
 
 function Card({ codeUrl, previewUrl, imgUrl, title, desc, tags }) {
 	return (
-		<div className="p-4 border-2 border-neutral-200 hover:border-[3px] rounded-[20px]">
-			<div className="border-2 border-neutral-200 rounded-[20px] overflow-hidden relative">
-				<div className="absolute top-4 right-4">
-					<a href={codeUrl} target="_blank">
-						<span className="material-symbols-rounded text-4xl cursor-pointer">
-							data_object
-						</span>
+		<div className="project-wrapper">
+			<div className="border-2 border-neutral-200 dark:border-gray-700 rounded-[20px] overflow-hidden relative">
+				<img src={imgUrl} alt={imgUrl} className="w-full" />
+
+				<div className="absolute top-4 right-4 flex rounded-full overflow-hidden">
+					<a
+						className="material-symbols-rounded text-4xl cursor-pointer"
+						href={codeUrl}
+						target="_blank"
+					>
+						data_object
 					</a>
-					<a href={previewUrl} target="_blank">
-						<span className="material-symbols-rounded text-4xl cursor-pointer">
-							north_east
-						</span>
+
+					<a
+						className="material-symbols-rounded text-4xl cursor-pointer"
+						href={codeUrl}
+						target="_blank"
+					>
+						north_east
 					</a>
 				</div>
-				<img src={imgUrl} alt={imgUrl} className="w-full" />
 			</div>
 
-			<div className="mt-4 px-4">
+			<div className="pt-4 text-black dark:text-white">
 				<div className="flex justify-between">
-					<div id="title" className="text-black text-4xl font-medium">
+					<div id="title" className="text-4xl font-medium">
 						{title}
 					</div>
-					<div>
-						<span className="material-symbols-rounded text-4xl cursor-pointer">
-							expand_more
-						</span>
+
+					<div className="material-symbols-rounded text-4xl cursor-pointer">
+						expand_more
 					</div>
 				</div>
-				<p className="text-2xl font-light break-words">{desc}</p>
-				<Tags data={tags} />
+
+				{/* <p className="my-4 text-2xl font-light break-words">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Tempora dolor aut, officiis consectetur quisquam vel saepe.
+					Maxime unde ducimus nobis!
+				</p> */}
+
+				<div className="mt-4 flex gap-2 flex-wrap">
+					{tags?.map((tag, index) => (
+						<Tags key={index} data={tag} />
+					))}
+				</div>
 			</div>
 		</div>
 	);
