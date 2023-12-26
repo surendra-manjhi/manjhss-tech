@@ -17,7 +17,7 @@ export const redirects = [
 	// },
 ];
 
-export const stackFilters = ["All", "Frontend", "Backend", "Database", "Tools"];
+export const stackFilters = ["All", "Frontend", "Backend", "Database", "Tool"];
 
 export const workFilters = [
 	"All",
@@ -42,19 +42,19 @@ import cpp from "../assets/tech-stack-icon/cpp.png";
 import figma from "../assets/tech-stack-icon/figma.png";
 import express from "../assets/tech-stack-icon/express-js.png";
 
-export const stackIcons = [
-	html,
-	css,
-	javascript,
-	bootstrap,
-	tailwind,
-	react,
-	mongodb,
-	node,
-	git,
-	cpp,
-	figma,
-	express,
+export const STACK_ICONS = [
+	{ type: "frontend", icon: html },
+	{ type: "frontend", icon: css },
+	{ type: "frontend", icon: javascript },
+	{ type: "frontend", icon: bootstrap },
+	{ type: "frontend", icon: tailwind },
+	{ type: "frontend", icon: react },
+	{ type: "database", icon: mongodb },
+	{ type: "backend", icon: node },
+	{ type: "tool", icon: git },
+	{ type: "programming", icon: cpp },
+	{ type: "tool", icon: figma },
+	{ type: "backend", icon: express },
 ];
 
 export const projects = [

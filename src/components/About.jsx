@@ -55,9 +55,9 @@ function About() {
 						</a>
 					))}
 
-					<span class="material-symbols-rounded more">
+					<button class="material-symbols-rounded more">
 						more_horiz
-					</span>
+					</button>
 				</div>
 			</div>
 		</section>
