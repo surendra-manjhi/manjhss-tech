@@ -11,9 +11,9 @@ function Works() {
 			<h2 className="heading">Works</h2>
 
 			<div className=" my-4 flex gap-2 flex-wrap">
-				{workFilters.map((filter, index) => (
+				{/* {workFilters.map((filter, index) => (
 					<Filter key={index} data={filter} />
-				))}
+				))} */}
 			</div>
 
 			<div className="grid grid-cols-2 gap-4 items-start mt-8">
