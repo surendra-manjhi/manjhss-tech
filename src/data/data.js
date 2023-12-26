@@ -17,15 +17,11 @@ export const redirects = [
 	// },
 ];
 
-export const stackFilters = ["All", "Frontend", "Backend", "Database", "Tool"];
-
-export const workFilters = [
+export const STACK_FILTERS = [
 	"All",
-	"SaaS",
-	"APIs",
-	"MERN",
-	"Portfolio",
-	"App",
+	"Frontend",
+	"Backend",
+	"Database",
 	"Tools",
 ];
 
@@ -53,12 +49,23 @@ export const STACK_ICONS = [
 	{ type: "backend", icon: node },
 	{ type: "tool", icon: git },
 	{ type: "programming", icon: cpp },
-	{ type: "tool", icon: figma },
+	{ type: "tools", icon: figma },
 	{ type: "backend", icon: express },
 ];
 
-export const projects = [
+export const PROJECT_FILTERS = [
+	"All",
+	"SaaS",
+	"APIs",
+	"MERN",
+	"Portfolio",
+	"App",
+	"Tools",
+];
+
+export const PROJECTS = [
 	{
+		type: "tools",
 		codeUrl: "https://github.com/surendra-manjhi/StickyNotes",
 		previewUrl: "https://surendra-manjhi.github.io/StickyNotes/",
 		imgUrl: "https://cdn.idntimes.com/content-images/community/2022/05/pexels-bruno-bueno-3854816-bbcda7aae3e62e5078fb8a9bde5c5e28-fae4425fb91eb861760dda8f198311c7_600x400.jpg",
@@ -67,6 +74,7 @@ export const projects = [
 		tags: ["html", "css", "javascript", "APIs"],
 	},
 	{
+		type: "portfolio",
 		codeUrl: "https://github.com/surendra-manjhi/CountDown-Timer",
 		previewUrl: "https://surendra-manjhi.github.io/CountDown-Timer/",
 		imgUrl: "https://website-assets.commoninja.com/distribution/1686558596514_image5-3.png",
@@ -75,6 +83,7 @@ export const projects = [
 		tags: ["html", "css", "javascript"],
 	},
 	{
+		type: "apis",
 		codeUrl: "https://github.com/surendra-manjhi/Dogpedia",
 		previewUrl: "https://dogpedia-bay.vercel.app/",
 		imgUrl: "https://savoryprimepet.com/wp-content/uploads/2018/03/A-happy-dog-on-a-computer.jpg",

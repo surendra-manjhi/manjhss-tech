@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Filter from "./Filter";
 
-import { stackFilters, STACK_ICONS } from "../data/data";
+import { STACK_FILTERS, STACK_ICONS } from "../data/data";
 
 function Stacks() {
 	const [active, setActive] = useState("all");
 	const [icons, setIcons] = useState([...STACK_ICONS]);
-
-	let newActive = active.charAt(0).toUpperCase() + active.slice(1); // capatalize letter e.g. all = All
 
 	const filterIcons = (val) => {
 		setActive(val);
@@ -28,12 +26,12 @@ function Stacks() {
 			<h2 className="heading">Stacks</h2>
 
 			<div className=" my-4 flex gap-2 flex-wrap">
-				{stackFilters.map((filter) => (
+				{STACK_FILTERS.map((filter, index) => (
 					<Filter
-						key={filter}
+						key={index}
 						data={filter}
 						handler={filterIcons}
-						active={newActive}
+						active={active}
 					/>
 				))}
 			</div>

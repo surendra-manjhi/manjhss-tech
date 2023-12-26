@@ -7,7 +7,9 @@ function Filter({ data, handler, active }) {
 			onClick={(e) => {
 				handler(e.target.innerText.toLowerCase());
 			}}
-			className={`filter ${active == data ? "active" : "inactive"}`}
+			className={`filter ${
+				active == data.toLowerCase() ? "active" : "inactive"
+			}`}
 		>
 			{data}
 		</button>
