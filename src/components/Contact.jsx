@@ -1,6 +1,6 @@
 import React from "react";
 
-import { redirects } from "../data/data";
+import { REDIRECTS } from "../data/data";
 
 function Contact() {
 	return (
@@ -20,7 +20,7 @@ function Contact() {
 				</div>
 
 				<div className="flex gap-4 items-center flex-wrap">
-					{redirects?.map((data, index) => (
+					{REDIRECTS?.map((data, index) => (
 						<a key={index} href={data.href} target="_blank">
 							<img
 								src={data.src}

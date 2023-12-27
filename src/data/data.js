@@ -2,7 +2,7 @@ import linkedin from "../assets/web-icon/linkedin-logo.png";
 import github from "../assets/web-icon/github-logo.png";
 // import twitter from "../assets/web-icon/twitter-logo.png";
 
-export const redirects = [
+export const REDIRECTS = [
 	{
 		href: "https://linkedin.com/in/surendra-manjhi",
 		src: linkedin,
@@ -47,7 +47,7 @@ export const STACK_ICONS = [
 	{ type: "frontend", icon: react },
 	{ type: "database", icon: mongodb },
 	{ type: "backend", icon: node },
-	{ type: "tool", icon: git },
+	{ type: "tools", icon: git },
 	{ type: "programming", icon: cpp },
 	{ type: "tools", icon: figma },
 	{ type: "backend", icon: express },

@@ -1,7 +1,7 @@
 import React from "react";
 import Highlight from "./Highlight";
 
-import { redirects } from "../data/data";
+import { REDIRECTS } from "../data/data";
 
 function About() {
 	return (
@@ -45,7 +45,7 @@ function About() {
 						</span>
 					</button>
 
-					{redirects?.map((data, index) => (
+					{REDIRECTS?.map((data, index) => (
 						<a key={index} href={data.href} target="_blank">
 							<img
 								src={data.src}
