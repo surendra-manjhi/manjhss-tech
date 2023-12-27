@@ -44,10 +44,7 @@ function Card({ codeUrl, previewUrl, imgUrl, title, desc, tags }) {
 
 				{isDisplay && (
 					<p className="my-4 text-2xl font-light break-words">
-						Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Debitis eum aut quam, a dicta nisi odio incidunt,
-						vitae error eveniet rerum in doloribus laboriosam neque
-						quidem sapiente reiciendis omnis! Minima!
+						{desc}
 					</p>
 				)}
 

@@ -1,8 +1,8 @@
 import linkedin from "../assets/web-icon/linkedin-logo.png";
 import github from "../assets/web-icon/github-logo.png";
-// import twitter from "../assets/web-icon/twitter-logo.png";
+import twitter from "../assets/web-icon/twitter-logo.png";
 
-export const REDIRECTS = [
+export const MAIN_LINKS = [
 	{
 		href: "https://linkedin.com/in/surendra-manjhi",
 		src: linkedin,
@@ -11,10 +11,17 @@ export const REDIRECTS = [
 		href: "https://github.com/surendra-manjhi",
 		src: github,
 	},
-	// {
-	// 	href: "https://twitter.com/manjhss",
-	// 	src: twitter,
-	// },
+];
+
+export const OPTIONAL_LINKS = [
+	{
+		href: "https://twitter.com/manjhss",
+		src: twitter,
+	},
+	{
+		href: "https://www.hackerrank.com/profile/manjhisurendra08",
+		src: "https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png",
+	},
 ];
 
 export const STACK_FILTERS = [
@@ -68,9 +75,9 @@ export const PROJECTS = [
 		type: "tools",
 		codeUrl: "https://github.com/surendra-manjhi/StickyNotes",
 		previewUrl: "https://surendra-manjhi.github.io/StickyNotes/",
-		imgUrl: "https://cdn.idntimes.com/content-images/community/2022/05/pexels-bruno-bueno-3854816-bbcda7aae3e62e5078fb8a9bde5c5e28-fae4425fb91eb861760dda8f198311c7_600x400.jpg",
+		imgUrl: "https://i.pinimg.com/564x/d8/bb/80/d8bb8022deb4fb607c95236fc7d4c70a.jpg",
 		title: "Sticky Notes",
-		desc: "",
+		desc: "With Sticky Notes, you can perform CRUD operations like Create, Read, Update, Delete Notes, Search Notes and Save Notes Data in browser's local storage.",
 		tags: ["html", "css", "javascript", "APIs"],
 	},
 	{
@@ -79,7 +86,7 @@ export const PROJECTS = [
 		previewUrl: "https://surendra-manjhi.github.io/CountDown-Timer/",
 		imgUrl: "https://website-assets.commoninja.com/distribution/1686558596514_image5-3.png",
 		title: "Countdown Timer",
-		desc: "",
+		desc: "CountDown Timer counts down from a certain number (minutes or seconds) to indicate the beginning or end of an event or offer.",
 		tags: ["html", "css", "javascript"],
 	},
 	{
@@ -88,7 +95,7 @@ export const PROJECTS = [
 		previewUrl: "https://dogpedia-bay.vercel.app/",
 		imgUrl: "https://savoryprimepet.com/wp-content/uploads/2018/03/A-happy-dog-on-a-computer.jpg",
 		title: "Dogpedia",
-		desc: "",
+		desc: "Dogpedia is a platform where numerous varieties of dog's infomation are displayed and also can be filtered. ",
 		tags: ["react", "APIs"],
 	},
 ];

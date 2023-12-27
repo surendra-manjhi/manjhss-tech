@@ -1,8 +1,10 @@
 import React from "react";
 
-import { REDIRECTS } from "../data/data";
+import { MAIN_LINKS, OPTIONAL_LINKS } from "../data/data";
 
 function Contact() {
+	const LINKS = [...MAIN_LINKS, ...OPTIONAL_LINKS];
+
 	return (
 		<section className="default">
 			<h2 className="heading">Let’s work</h2>
@@ -20,12 +22,12 @@ function Contact() {
 				</div>
 
 				<div className="flex gap-4 items-center flex-wrap">
-					{REDIRECTS?.map((data, index) => (
+					{LINKS?.map((data, index) => (
 						<a key={index} href={data.href} target="_blank">
 							<img
 								src={data.src}
 								alt={data.src}
-								className="w-[52px] aspect-auto"
+								className="w-[52px] aspect-auto rounded-md"
 							/>
 						</a>
 					))}

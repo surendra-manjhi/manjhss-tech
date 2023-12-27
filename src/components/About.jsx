@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Highlight from "./Highlight";
 
-import { REDIRECTS } from "../data/data";
+import { MAIN_LINKS, OPTIONAL_LINKS } from "../data/data";
 
 function About() {
+	const [links, setLinks] = useState([...MAIN_LINKS]);
+	const [isDisplay, setIsDisplay] = useState(false);
+
+	function handleClick() {
+		isDisplay
+			? setLinks([...MAIN_LINKS])
+			: setLinks([...MAIN_LINKS, ...OPTIONAL_LINKS]);
+		setIsDisplay(!isDisplay);
+	}
+
 	return (
 		<section className="about">
 			<div className="relative">
@@ -45,17 +55,20 @@ function About() {
 						</span>
 					</button>
 
-					{REDIRECTS?.map((data, index) => (
+					{links?.map((data, index) => (
 						<a key={index} href={data.href} target="_blank">
 							<img
 								src={data.src}
 								alt={data.src}
-								className="w-[52px] aspect-auto"
+								className="w-[52px] aspect-auto rounded-md"
 							/>
 						</a>
 					))}
 
-					<button class="material-symbols-rounded more">
+					<button
+						onClick={handleClick}
+						class="material-symbols-rounded more"
+					>
 						more_horiz
 					</button>
 				</div>
