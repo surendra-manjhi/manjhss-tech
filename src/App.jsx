@@ -2,12 +2,12 @@ import Stacks from "./components/Stacks";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import Music from "./components/Music";
+import Theme from "./components/Theme";
 
 function App() {
 	return (
 		<main className="w-[80%] mx-auto relative">
-			<Music />
+			<Theme />
 			<About />
 			<Stacks />
 			<Works />
