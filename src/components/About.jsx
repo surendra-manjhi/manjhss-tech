@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Highlight from "./Highlight";
+import Banner from "./Banner";
 
 import { MAIN_LINKS, OPTIONAL_LINKS } from "../data/data";
 
@@ -17,13 +18,7 @@ function About() {
 	return (
 		<section className="about">
 			<div className="relative">
-				<div>
-					<img
-						src="https://user-images.githubusercontent.com/63772910/179602695-9c533f5f-cd66-48cb-bc88-381bf8b84e82.png"
-						alt="cover-img"
-						className="w-full"
-					/>
-				</div>
+				<Banner />
 
 				<div className="profile-pic-wrapper">
 					<img
