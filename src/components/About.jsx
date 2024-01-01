@@ -20,11 +20,11 @@ function About() {
 			<div className="relative">
 				<Banner />
 
-				<div className="profile-pic-wrapper">
+				<div className="profile-pic-wrapper overflow-hidden">
 					<img
 						src="https://pbs.twimg.com/profile_images/1707029425551036416/UBrgU5Zt_400x400.jpg"
 						alt="profile-pic"
-						className="w-full rounded-[20px]"
+						className="w-full"
 					/>
 				</div>
 			</div>
