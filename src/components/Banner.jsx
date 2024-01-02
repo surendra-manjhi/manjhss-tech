@@ -12,6 +12,10 @@ function Banner() {
 		setCurrentIndex(newIndex);
 	}
 
+	function goToSlide(slideIndex) {
+		setCurrentIndex(slideIndex);
+	}
+
 	return (
 		<div className="relative">
 			<img
@@ -26,6 +30,18 @@ function Banner() {
 			>
 				navigate_next
 			</button>
+
+			<div className="absolute bottom-4 left-[50%]">
+				{slides.map((slide, slideIndex) => (
+					<button
+						key={slideIndex}
+						onClick={() => goToSlide(slideIndex)}
+						className="material-symbols-rounded"
+					>
+						fiber_manual_record
+					</button>
+				))}
+			</div>
 		</div>
 	);
 }
