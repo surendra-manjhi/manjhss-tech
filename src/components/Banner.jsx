@@ -12,10 +12,6 @@ function Banner() {
 		setCurrentIndex(newIndex);
 	}
 
-	function goToSlide(slideIndex) {
-		setCurrentIndex(slideIndex);
-	}
-
 	return (
 		<div className="relative">
 			<img
