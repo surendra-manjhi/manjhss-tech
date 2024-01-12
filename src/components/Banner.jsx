@@ -26,22 +26,10 @@ function Banner() {
 
 			<button
 				onClick={nextSlide}
-				className="material-symbols-rounded absolute top-[50%] right-8 text-4xl text-white bg-gray-500/70 hover:bg-gray-500 w-10 h-10 rounded-full"
+				className="material-symbols-rounded absolute top-[50%] right-8 text-4xl text-white bg-gradient-to-b from-gray-700 to-zinc-900 w-10 h-10 rounded-full"
 			>
 				navigate_next
 			</button>
-
-			<div className="absolute bottom-4 left-[50%]">
-				{slides.map((slide, slideIndex) => (
-					<button
-						key={slideIndex}
-						onClick={() => goToSlide(slideIndex)}
-						className="material-symbols-rounded"
-					>
-						fiber_manual_record
-					</button>
-				))}
-			</div>
 		</div>
 	);
 }
