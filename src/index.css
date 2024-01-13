@@ -16,7 +16,7 @@
 	}
 
 	.resume {
-		@apply bg-gradient-to-r from-[#cbffcb] to-yellow-100 text-[32px] text-zinc-900 font-normal py-2 px-10 rounded-full flex gap-2 items-center;
+		@apply bg-gradient-to-r from-[#cbffcb] to-purple-200 text-[32px] text-zinc-900 font-normal py-2 px-10 rounded-full flex gap-2 items-center;
 	}
 
 	.heading {
