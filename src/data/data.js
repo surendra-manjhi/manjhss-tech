@@ -1,7 +1,5 @@
 import linkedin from "../assets/web-icon/linkedin-logo.png";
 import github from "../assets/web-icon/github-logo.png";
-import twitter from "../assets/web-icon/twitter-logo.png";
-import hackerrank from "../assets/web-icon/hackerrank-logo.png";
 
 export const MAIN_LINKS = [
 	{
@@ -11,17 +9,6 @@ export const MAIN_LINKS = [
 	{
 		href: "https://github.com/surendra-manjhi",
 		src: github,
-	},
-];
-
-export const OPTIONAL_LINKS = [
-	{
-		href: "https://twitter.com/manjhss",
-		src: twitter,
-	},
-	{
-		href: "https://www.hackerrank.com/profile/manjhisurendra08",
-		src: hackerrank,
 	},
 ];
 
