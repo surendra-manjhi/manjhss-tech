@@ -1,9 +1,9 @@
 import React from "react";
 
-import { MAIN_LINKS, OPTIONAL_LINKS } from "../data/data";
+import { MAIN_LINKS } from "../data/data";
 
 function Contact() {
-	const LINKS = [...MAIN_LINKS, ...OPTIONAL_LINKS];
+	const LINKS = [...MAIN_LINKS];
 
 	return (
 		<div className="bg-gradient-to-b from-white to-transparent p-1 my-8 rounded-2xl">
