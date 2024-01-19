@@ -22,7 +22,6 @@ function Stacks() {
 	};
 
 	return (
-		<div className="bg-gradient-to-b from-white to-transparent p-1 my-8 rounded-2xl">
 			<section className="default">
 				<h2 className="heading">Stacks</h2>
 
@@ -53,7 +52,6 @@ function Stacks() {
 					))}
 				</div>
 			</section>
-		</div>
 	);
 }
 

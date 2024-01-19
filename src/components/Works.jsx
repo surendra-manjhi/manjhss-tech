@@ -23,7 +23,6 @@ function Works() {
 	};
 
 	return (
-		<div className="bg-gradient-to-b from-white to-transparent p-1 my-8 rounded-2xl">
 			<section className="default">
 				<h2 className="heading">Works</h2>
 
@@ -52,7 +51,6 @@ function Works() {
 					))}
 				</div>
 			</section>
-		</div>
 	);
 }
 
