@@ -12,7 +12,7 @@
 	}
 
 	.profile-pic-wrapper {
-		@apply w-[120px] border-[6px] border-zinc-900 absolute left-8 bottom-[-60px] rounded-2xl;
+		@apply w-[120px] border-2 border-zinc-900 absolute left-8 bottom-[-60px] rounded-2xl;
 	}
 
 	.resume {
@@ -36,7 +36,7 @@
 	}
 
 	.project-wrapper {
-		@apply bg-gradient-to-t from-gray-700 to-zinc-900  rounded-[20px] overflow-hidden;
+		@apply border-2 border-gray-700 rounded-[20px] overflow-hidden;
 	}
 
 	.input-wrapper {

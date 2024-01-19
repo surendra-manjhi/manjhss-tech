@@ -45,7 +45,7 @@ export const STACK_ICONS = [
 	{ type: "tools", icon: git },
 	{ type: "programming", icon: cpp },
 	{ type: "tools", icon: figma },
-	{ type: "backend", icon: express },
+	// { type: "backend", icon: express },
 ];
 
 export const PROJECT_FILTERS = [

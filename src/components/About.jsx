@@ -25,8 +25,8 @@ function About() {
 				</h1>
 
 				<p className="my-4 text-[calc(26px_+_0.390625vw)] text-white font-light break-words">
-					Hola, I’m <Highlight>Surendra</Highlight>. I’m a{" "}
-					<Highlight>full-stack developer</Highlight> with{" "}
+					Hola, I’m <Highlight>Surendra Manjhi</Highlight>. I’m a{" "}
+					<Highlight>MERN Stack Developer</Highlight> with{" "}
 					<Highlight>1 year</Highlight> of experience. I enjoy
 					building websites and digital products, based in BHARAT. My
 					focus is <Highlight>React (Next.js)</Highlight>.
