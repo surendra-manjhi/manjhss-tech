@@ -4,7 +4,7 @@
 
 @layer components {
 	.about {
-		@apply mt-8 bg-gradient-to-b from-gray-700 to-zinc-900 rounded-2xl overflow-hidden;
+		@apply bg-gradient-to-b from-gray-700 to-zinc-900 rounded-2xl overflow-hidden;
 	}
 
 	.default {
@@ -36,7 +36,7 @@
 	}
 
 	.project-wrapper {
-		@apply border-2 border-white  rounded-[20px] overflow-hidden;
+		@apply bg-gradient-to-t from-gray-700 to-zinc-900  rounded-[20px] overflow-hidden;
 	}
 
 	.input-wrapper {
