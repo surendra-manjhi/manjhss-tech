@@ -4,11 +4,11 @@
 
 @layer components {
 	.about {
-		@apply bg-gradient-to-b from-gray-700 to-zinc-900 rounded-2xl overflow-hidden;
+		@apply border-2 border-gray-700 bg-gradient-to-b from-gray-700 to-zinc-900 rounded-2xl overflow-hidden;
 	}
 
 	.default {
-		@apply mt-8 p-8 bg-gradient-to-b from-gray-700 to-zinc-900 rounded-2xl;
+		@apply border-2 border-gray-700 mt-8 p-8 bg-gradient-to-b from-gray-700 to-zinc-900 rounded-2xl;
 	}
 
 	.profile-pic-wrapper {
@@ -36,7 +36,7 @@
 	}
 
 	.project-wrapper {
-		@apply border-2 border-gray-700 rounded-[20px] overflow-hidden;
+		@apply shadow-sm border-2 border-gray-700 rounded-[20px] overflow-hidden;
 	}
 
 	.input-wrapper {
